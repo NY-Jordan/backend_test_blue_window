@@ -1,0 +1,6 @@
+{
+    "watch": ["src"],
+    "ignore": ["node_modules", ".git", "prisma/migrations"],
+    "ext": "js,ts,json",
+    "exec" : "tsx watch  ./src/app.ts"
+  }
