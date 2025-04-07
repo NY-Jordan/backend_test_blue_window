@@ -13,14 +13,15 @@ dotenv.config();
 
 const app  : Application = express();
 
-app.use(cors({
-  credentials : true
-}))
 
 app.use(express.json());
 app.use(compression())
 app.use(cookieParser())
 app.use(express.urlencoded({ extended : true  }));
+
+app.use(cors({
+  credentials : true
+}));
 
 
 app.use('/api/v1', apiRouter);
