@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import cors from 'cors'
 import compression from 'compression'
 import cookieParser from 'cookie-parser';
-import userRoutes from './routes/user.routes';
+import userRoutes from './routes/task.routes';
 import authRoutes from './routes/auth.routes';
 import { apiRouter } from './routes';
 

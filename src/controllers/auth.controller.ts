@@ -7,6 +7,7 @@ import { createUserToken } from "../services/user.service";
 
 
 const authController = { 
+    
     register : async (req : Request, res : Response) => {
         const { email, name, password } = req.body;
         const saltRounds = 10;
