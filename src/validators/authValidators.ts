@@ -29,7 +29,7 @@ export const registerValidator = [
         where: { email }
       });
       if (existingUser) {
-        res.status(422).json({ message: 'Email already in use' });
+        res.status(409).json({ message: 'Email already in use' });
       }
 
       next();

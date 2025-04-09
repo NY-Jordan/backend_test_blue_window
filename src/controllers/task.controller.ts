@@ -63,7 +63,6 @@ const taskController = {
                     limit: limit
                 }
             });
-            res.status(200).json({ message :  'message' }); 
         } catch {
             
         }

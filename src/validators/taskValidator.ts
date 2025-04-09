@@ -34,9 +34,7 @@ export const updateTaskValidator = [
       .notEmpty()
       .withMessage('title is required'),
 
-    body('status')
-      .isEmpty(),
-      
+    
     body('description')
         .isLength({ min: 6 })
         .withMessage('description must have at least 12 characters ')
